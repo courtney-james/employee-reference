@@ -4,10 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/courtney-james/tcc-reference.git"
+  },
+  "author": "Courtney James",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/courtney-james/tcc-reference/issues"
+  },
+  "homepage": "https://github.com/courtney-james/tcc-reference#readme",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
     "babelify": "^7.3.0",
